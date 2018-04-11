@@ -14,7 +14,7 @@ Note:
 You may assume that you have an infinite number of each kind of coin.
 
 Solution v1(cpp):  
-`
+```
 # include <limits>
 
 class Solution {
@@ -45,4 +45,4 @@ public:
         return ans[amount-1];
    }
 };
-`
+```
