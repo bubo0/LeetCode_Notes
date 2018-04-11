@@ -2,19 +2,19 @@ Medium
 
 You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
 
-Example 1:
-coins = [1, 2, 5], amount = 11
-return 3 (11 = 5 + 5 + 1)
+Example 1:  
+coins = [1, 2, 5], amount = 11  
+return 3 (11 = 5 + 5 + 1)  
 
-Example 2:
-coins = [2], amount = 3
-return -1.
+Example 2:  
+coins = [2], amount = 3  
+return -1.  
 
-Note:
+Note:  
 You may assume that you have an infinite number of each kind of coin.
 
-Solution v1:
-
+Solution v1(cpp):  
+`
 # include <limits>
 
 class Solution {
@@ -36,7 +36,7 @@ public:
                 if (coins[j]<i+1) {
                     if ((ans[i-coins[j]]!=std::numeric_limits<int>::max())&&(ans[i]>(ans[i-coins[j]]+1))) {
                         ans[i] = ans[i-coins[j]] + 1;
-                    }   // INT_MAX + 1 = INT_MIN ?
+                    }   // INT_MAX + 1 = INT_MIN
                 }
             }
         }
@@ -45,3 +45,4 @@ public:
         return ans[amount-1];
    }
 };
+`
