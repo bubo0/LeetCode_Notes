@@ -6,6 +6,13 @@ The robot can only move either down or right at any point in time. The robot is 
 
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
 
+Notes: 
+
+1 size ***n*** problem -> create size ***n+1*** space to solve it may simplify the solution under special conditions
+
+2 pay attention to the indices especially when there are multiple dimensions. Double check to make sure that the variable i and j etc. are in the right position.
+
+
 My Solution:
 
 ```java
@@ -59,11 +66,7 @@ class Solution {
         }
         
         */
-        
-        
-        
-        
-        
+
     }
 }
 
