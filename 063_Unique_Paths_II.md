@@ -6,7 +6,7 @@ The robot can only move either down or right at any point in time. The robot is 
 
 Now consider if some obstacles are added to the grids. How many unique paths would there be?
 
-Notes: 
+**Notes: 
 
 1 size ***n*** problem -> create size ***n+1*** space to solve it may simplify the solution under special conditions
 
