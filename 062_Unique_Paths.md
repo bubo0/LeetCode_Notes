@@ -7,12 +7,14 @@ The robot can only move either down or right at any point in time. The robot is 
 How many possible unique paths are there?
 
 **Notes**
-
+1 2 dimensions dp problem solution may be optimized to use only O(m) instead of O(m\*n) of space complexity
 
 **My Solution**
 
-**Time & Space Complexity**
-O(m)(n); O(m) (or O(n))
+***Time & Space Complexity***
+
+O(m\*n)  
+O(m) (or O(n))
 
 ```java
 class Solution {
