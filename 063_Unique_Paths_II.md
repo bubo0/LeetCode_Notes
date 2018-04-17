@@ -16,7 +16,7 @@ Notes
 My Solution
 ----
 
-**Time&Space Complexity**
+**Time & Space Complexity**
 
 O(m\*n)  
 O(m) (or O(n))
