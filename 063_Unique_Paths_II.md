@@ -10,7 +10,7 @@ Notes
 ----
 1 size **n** problem -> create size **n+1** space to solve it may simplify the solution under special conditions
 
-2 pay attention to the indices especially when there are multiple dimensions. Double check to make sure that the variable i and j etc. are in the right position.
+2 pay attention to the indices especially when there are multiple dimensions. Double check to make sure that the variable i and j etc. are in the right position. e.g. int\[i\]\[j\] instead of int\[j\]\[i\]
 
 
 My Solution
