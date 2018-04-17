@@ -8,7 +8,7 @@ Now consider if some obstacles are added to the grids. How many unique paths wou
 
 Notes 
 ----
-1 size ***n*** problem -> create size ***n+1*** space to solve it may simplify the solution under special conditions
+1 size **n** problem -> create size **n+1** space to solve it may simplify the solution under special conditions
 
 2 pay attention to the indices especially when there are multiple dimensions. Double check to make sure that the variable i and j etc. are in the right position.
 
@@ -36,11 +36,13 @@ class Solution {
         num[1] = 1;
         for (int i=0; i<n; ++i) {
             for (int j=0; j<m; ++j) {
-                if (1==obstacleGrid[j][i]) num[j+1] = 0;   //!!! pay attention to the index! especially when there are multple dimensions!
+                if (1==obstacleGrid[j][i]) num[j+1] = 0;   
+                // pay attention to the index, especially when there are multple dimensions
                 else num[j+1] = num[j] + num[j+1];
             }    
         }
         return num[m];
+        
         /*
         for (int i=0; i<m; ++i) {
             if (1==obstacleGrid[i][0]) {
@@ -54,8 +56,10 @@ class Solution {
         
         if (1==m) {
             
-            // get wrong when the input is [[0,1]]:
-            for (int l=0; l<n; ++l) {  // 1  start from 0 instead of 1 !!!  2  bug fixed: ++l instead of ++n !!!
+            // pay attention to special input such as [[0,1]]:
+            for (int l=0; l<n; ++l) {  
+            // 1  start from 0 instead of 1 
+            // 2  bug fixed: ++l instead of ++n
                 if (1==obstacleGrid[0][l]) return 0;
             }
             return 1;
@@ -68,11 +72,8 @@ class Solution {
             }
         }
         return num[m-1];
-        
         }
-        
         */
-
     }
 }
 
