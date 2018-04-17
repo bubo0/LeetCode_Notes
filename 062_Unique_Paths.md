@@ -1,4 +1,5 @@
-**Description**
+Description
+----
 
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 
@@ -6,11 +7,12 @@ The robot can only move either down or right at any point in time. The robot is 
 
 How many possible unique paths are there?
 
-**Notes**
-
+Notes
+----
 1 two dimensions dp problem solution may be optimized to use only O(m) instead of O(m\*n) of space complexity
 
-*My Solution*
+My Solution
+----
 
 ***Time & Space Complexity***
 
