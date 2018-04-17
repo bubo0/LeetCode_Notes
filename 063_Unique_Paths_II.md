@@ -43,7 +43,7 @@ class Solution {
         }
         return num[m];
         
-        /*
+        /* failed answer when not using m+1: the answer would be longer and therefore is more likely to contain bugs
         for (int i=0; i<m; ++i) {
             if (1==obstacleGrid[i][0]) {
                 num[i] = 0;
