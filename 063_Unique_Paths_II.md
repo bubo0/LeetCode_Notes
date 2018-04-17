@@ -13,12 +13,14 @@ Notes
 2 pay attention to the indices especially when there are multiple dimensions. Double check to make sure that the variable i and j etc. are in the right position.
 
 
-My Solution:
+My Solution
 ----
 
 **Time&Space Complexity**
+
 O(m\*n)  
 O(m) (or O(n))
+
 ```java
 
 class Solution {
