@@ -1,7 +1,7 @@
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
 For example:
-Given binary tree [3,9,20,null,null,15,7],
+Given binary tree \[3,9,20,null,null,15,7 \],
 ```
     3
    / \
@@ -40,7 +40,8 @@ class Solution {
         List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
         
         if (null==root) return wrapList;
-        
+
+        // basic operation for queue in java: offer(T) and peek(T)
         // ? what is queue.offer(root)?
         // ? what is queue.peek()
         queue.offer(root);
